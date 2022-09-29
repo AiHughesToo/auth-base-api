@@ -28,8 +28,10 @@ gem 'active_model_serializers'
 gem 'yard'
 gem 'devise'
 gem 'jwt'
-gem 'aws-sdk', '~> 2'
+# gem 'aws-sdk', '~> 2'
 gem 'net-smtp', require: false
+gem 'net-imap', require: false
+gem 'net-pop', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
