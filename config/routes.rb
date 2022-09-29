@@ -7,6 +7,7 @@ Rails.application.routes.draw do
     post 'user/login' => 'authentication#create'
 
     #users
+    p "im in the route file"
     post 'user' => 'users#create'
     post 'request_pass_reset' => 'users#password_reset'
 end
