@@ -16,9 +16,8 @@ class UsersController < ApplicationController
 
   # POST /users
   def create
-    p "im in the create function"
     @user = User.new(user_params)
-    p "i have made a new user"
+  
     if @user.save
       render json: @user, status: :created, location: @user
     else
